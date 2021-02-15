@@ -8,6 +8,8 @@ date=$(date +%Y-%m-%d-%H-%M-%S)
 if [ "$*" == "" ]; then
     echo "$0 domainList.txt"
     exit 1
+else
+	nmap
 fi
 
 slackNotification() {
